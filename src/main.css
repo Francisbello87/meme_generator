@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+:root {
+  --primary-color: #fff;
+  --gradient-color: linear-gradient(to right, #672280, #a626d3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background: #e5e5e5;
+  width: 100vw;
+  font-family: "Inter", sans-serif;
+}
+.App {
+  max-width: 550px;
+  background: var(--primary-color);
+  margin: 50px auto;
+}
+.header {
+  padding-left: 20px;
+  height: 65px;
+  background: var(--gradient-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--primary-color);
+}
+.header img {
+  height: 26.22px;
+  width: 178.79px;
+}
+.header h3 {
+  font-size: 12px;
+  font-weight: 400;
+  padding-right: 37px;
+}
+.meme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.meme .input {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+  margin-top: 36px;
+}
+.meme .input input {
+  font-family: "Inter", sans-serif;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  caret-color: red;
+  outline: none;
+  text-indent: 5px;
+}
+.meme button {
+  font-family: "Inter", sans-serif;
+  color: var(--primary-color);
+  width: 440px;
+  justify-self: center;
+  margin: 0 auto;
+  margin-bottom: 36px;
+  padding: 5px 0;
+  border-radius: 5px;
+  border: none;
+  background: var(--gradient-color);
+  cursor: pointer;
+}
