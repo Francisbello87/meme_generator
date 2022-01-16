@@ -55,20 +55,27 @@ body {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid black;
-  caret-color: red;
+  caret-color: var(--gradient-color);
   outline: none;
   text-indent: 5px;
 }
 .meme button {
   font-family: "Inter", sans-serif;
   color: var(--primary-color);
-  width: 440px;
+  width: 420px;
   justify-self: center;
   margin: 0 auto;
   margin-bottom: 36px;
-  padding: 5px 0;
+  padding: 10px 0;
   border-radius: 5px;
   border: none;
   background: var(--gradient-color);
   cursor: pointer;
+}
+.meme-image {
+  max-width: 100%;
+  padding: 8px 36px;
+}
+main {
+  padding: 36px;
 }
