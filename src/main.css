@@ -30,9 +30,18 @@ body {
   align-items: center;
   color: var(--primary-color);
 }
-.header img {
+.header-right {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 31.31px;
   height: 26.22px;
-  width: 178.79px;
+  margin-right: 7px;
+}
+.header-right .logo-title {
+  font-size: 21px;
+  font-weight: bold;
 }
 .header h3 {
   font-size: 12px;
@@ -40,42 +49,120 @@ body {
   padding-right: 37px;
 }
 .meme {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  position: relative;
 }
-.meme .input {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 15px;
-  margin-top: 36px;
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+  margin-bottom: 17px;
 }
-.meme .input input {
-  font-family: "Inter", sans-serif;
-  padding: 5px;
+
+.form--input {
+  font-family: "Karla", sans-serif;
   border-radius: 5px;
-  border: 1px solid black;
-  caret-color: var(--gradient-color);
-  outline: none;
+  border: 1px solid #d5d4d8;
   text-indent: 5px;
 }
-.meme button {
-  font-family: "Inter", sans-serif;
-  color: var(--primary-color);
-  width: 420px;
-  justify-self: center;
-  margin: 0 auto;
-  margin-bottom: 36px;
-  padding: 10px 0;
+
+.form--button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
   border-radius: 5px;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  color: white;
   border: none;
-  background: var(--gradient-color);
   cursor: pointer;
 }
+
 .meme-image {
   max-width: 100%;
-  padding: 8px 36px;
+  border-radius: 3px;
 }
 main {
   padding: 36px;
 }
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 rgb(36, 25, 25), 0 -2px 0 #000,
+    -2px 0 0 #000, 2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+/* * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #639;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+.form-container {
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.75);
+}
+
+.form--input {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 5px;
+  font-family: "Inter", sans-serif;
+}
+
+.form--submit {
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: #639;
+  border: none;
+  cursor: pointer;
+}
+
+.form--marketing {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.form--marketing > input {
+  margin-right: 10px;
+} */
